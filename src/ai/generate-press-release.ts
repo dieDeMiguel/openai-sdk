@@ -1,6 +1,7 @@
 import { openai } from "@/ai";
-import { createPressRelease, PressReleaseAsset, setLanguage } from "@/db";
+import { createPressRelease, setLanguage } from "@/db";
 import EditorBlocksSchema from "@/schemas/press-release-schema";
+import { PressReleaseAsset } from "@/types/db-types";
 import { zodResponseFormat } from "openai/helpers/zod";
 
 const SYSTEM_CONTEXT = (language: string) => `

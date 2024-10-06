@@ -22,7 +22,7 @@ export const useSubmitPressRelease = (): UseSubmitPressReleaseResult => {
 
     try {
       // Step 1: Generate the press release
-      setCurrentStep(2);
+      setTimeout(() => setCurrentStep(2), 1000);
       const response = await fetch(`/api/generate-press-release`, {
         method: "POST",
         body: JSON.stringify({ prompt: data.userInput }),
