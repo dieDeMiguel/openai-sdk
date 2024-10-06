@@ -1,6 +1,6 @@
-CREATE TABLE IF NOT EXISTS pressreleases_assets (
+CREATE TABLE IF NOT EXISTS pressreleases_assets_jsonb (
   id SERIAL PRIMARY KEY,
-  pressrelease_body TEXT,
+  pressrelease_body JSONB,
   language TEXT,
   keywords TEXT,
   image_url TEXT,

@@ -1,8 +1,9 @@
 "use client";
-import { PressReleaseAsset } from "@/db";
+
 import { useToast } from "@/hooks/use-toast";
 import useInitializeEditor from "@/hooks/useInitializeEditor";
 import { cn } from "@/lib/utils";
+import { PressReleaseAsset } from "@/types/db-types";
 import useEditorBlocks from "@/utils/editor/use-editor-blocks";
 import EditorJS from "@editorjs/editorjs";
 import { useRef } from "react";

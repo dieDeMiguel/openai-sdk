@@ -16,7 +16,7 @@ export default async function Page() {
   const id = pathname?.split("/").pop() || "";
   const numericId = parseInt(id, 10);
   const pressRelease = await getGeneratedPressRelease(numericId);
-
+  console.log(pressRelease.pressrelease_body);
   return (
     <div className="max-w-maxWidthEditorCanvas w-full lg:w-3/4 shadow-md h-full overflow-auto bg-white px-4 py-8 lg:px-6 rounded-lg flex flex-col gap-8">
       <Editor
